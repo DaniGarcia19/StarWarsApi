@@ -1,62 +1,67 @@
 <template>
+  <div class="app-container">
+    <Splide :options="options" aria-label="Background Carousel">
+      <SplideSlide>
+        <img src="https://images4.alphacoders.com/131/1313954.jpeg" alt="Background 1" />
+      </SplideSlide>
+      <SplideSlide>
+        <img src="https://wallpapers.com/images/featured/star-wars-plzcoaffexgf4h81.jpg" alt="Background 2" />
+      </SplideSlide>
+      <SplideSlide>
+        <img src="https://wallpapers.com/images/hd/4k-star-wars-bb-8-1asl0uvl1jfqcsxq.jpg" alt="Background 3" />
+      </SplideSlide>
+      <SplideSlide>
+        <img src="https://wallpapers.com/images/hd/4k-star-wars-battlefront-gameplay-9e7drd32m028m295.jpg" alt="Background 4" />
+      </SplideSlide>
+    </Splide>
 
-  <Splide :options="options" aria-label="Background Carousel">
-    <SplideSlide>
-      <img src="https://images5.alphacoders.com/111/1113894.jpg" alt="Background 1" />
-    </SplideSlide>
-    <SplideSlide>
-      <img src="https://wallpapers.com/images/featured/star-wars-plzcoaffexgf4h81.jpg" alt="Background 2" />
-    </SplideSlide>
-    <SplideSlide>
-      <img src="https://wallpapers.com/images/hd/4k-star-wars-bb-8-1asl0uvl1jfqcsxq.jpg" alt="Background 3" />
-    </SplideSlide>
-    <SplideSlide>
-      <img src="https://wallpapers.com/images/hd/4k-star-wars-battlefront-gameplay-9e7drd32m028m295.jpg" alt="Background 4" />
-    </SplideSlide>
-    <SplideSlide>
-      <img src="https://images4.alphacoders.com/131/1313954.jpeg" alt="Background 5" />
-    </SplideSlide>
-
-  </Splide>
-
-  <header class="header-container">
-    <div class="imagen">
-      <img src="/src/assets/imgs/imagenStarWars.png" alt="Descripción de la imagen" />
-    </div>
-    <div class="desplegable">
-      <div class="dropdown">
-        <button
-          class="btn btn-custom dropdown-toggle w-100"
-          type="button"
-          id="dropdownMenuButton"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          ACCEDE A LOS DATOS
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <li>
-            <RouterLink to="/" class="dropdown-item">Inicio</RouterLink>
-          </li>
-          <li>
-            <RouterLink to="/about" class="dropdown-item">Acerca de</RouterLink>
-          </li>
-          <li>
-            <RouterLink to="/contact" class="dropdown-item">Contacto</RouterLink>
-          </li>
-        </ul>
+    <header class="header-container">
+      <div class="video-background">
+        <video autoplay loop muted playsinline>
+          <source src="../src/assets/imgs/espacio.mp4" type="video/mp4"/>
+        </video>
       </div>
-    </div>
-  </header>
-  <RouterView />
+
+      <div class="imagen">
+        <img src="/src/assets/imgs/imagenStarWars.png" alt="Descripción de la imagen" />
+      </div>
+
+      <nav class="header-links">
+        <!-- <RouterLink to="/vista1" class="header-link">Inicio</RouterLink>
+        <RouterLink to="/people" class="header-link">Personajes</RouterLink>
+        <RouterLink to="/planets" class="header-link">Planetas</RouterLink> -->
+        <RouterLink to="/Peliculas" class="header-link">Películas</RouterLink>
+        <!-- <RouterLink to="/vista5" class="header-link">Especies</RouterLink>
+        <RouterLink to="/vista6" class="header-link">Vehículos</RouterLink>
+        <RouterLink to="/vista7" class="header-link">Naves Espaciales</RouterLink> -->
+      </nav>
+    </header>
+
+    <RouterView />
+
+    <footer class="footer-container">
+      <div class="footer-content">
+        <p>&copy; 2024 Star Wars Universe. Todos los derechos reservados.</p>
+        <div class="footer-links">
+          <a href="/contacto" class="footer-link">Contacto</a>
+          <a href="/politica-privacidad" class="footer-link">Política de Privacidad</a>
+          <a href="/terminos" class="footer-link">Términos y Condiciones</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://facebook.com" class="footer-social-link" target="_blank">Facebook</a>
+          <a href="https://twitter.com" class="footer-social-link" target="_blank">Twitter</a>
+          <a href="https://instagram.com" class="footer-social-link" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </footer>
+  </div>
 </template>
 
 <script setup>
-import { RouterView } from 'vue-router';
+import { RouterView, RouterLink } from 'vue-router';
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 
-// Opciones de configuración para el carrusel
 const options = {
   type: 'fade',
   rewind: true,
@@ -66,6 +71,7 @@ const options = {
   pagination: false,
 };
 </script>
+
 <style scoped>
 @import "assets/styles.scss";
 </style>

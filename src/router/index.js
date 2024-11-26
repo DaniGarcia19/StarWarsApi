@@ -1,3 +1,4 @@
+import PeliculasComponent from '@/components/PeliculasComponent.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 
@@ -7,6 +8,11 @@ const router = createRouter({
     {
       path: '/',
       name: 'home'
+    },
+    {
+      path: '/Peliculas',
+      name: 'PeliculasPage',
+      component: PeliculasComponent
     }
   ]
 })
