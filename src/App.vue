@@ -18,7 +18,7 @@
     <header class="header-container">
       <div class="video-background">
         <video autoplay loop muted playsinline>
-          <source src="../src/assets/imgs/espacio.mp4" type="video/mp4"/>
+          <source src="../src/assets/imgs/espacio2.mp4" type="video/mp4"/>
         </video>
       </div>
 
@@ -27,13 +27,13 @@
       </div>
 
       <nav class="header-links">
-        <!-- <RouterLink to="/vista1" class="header-link">Inicio</RouterLink>
+        <RouterLink to="/" class="header-link">Inicio</RouterLink>
         <RouterLink to="/people" class="header-link">Personajes</RouterLink>
-        <RouterLink to="/planets" class="header-link">Planetas</RouterLink> -->
+        <RouterLink to="/planets" class="header-link">Planetas</RouterLink> 
         <RouterLink to="/Peliculas" class="header-link">Películas</RouterLink>
-        <!-- <RouterLink to="/vista5" class="header-link">Especies</RouterLink>
+          <RouterLink to="/vista5" class="header-link">Especies</RouterLink>
         <RouterLink to="/vista6" class="header-link">Vehículos</RouterLink>
-        <RouterLink to="/vista7" class="header-link">Naves Espaciales</RouterLink> -->
+        <RouterLink to="/vista7" class="header-link">Naves Espaciales</RouterLink>
       </nav>
     </header>
 

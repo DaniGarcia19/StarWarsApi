@@ -1,0 +1,93 @@
+.Personajes {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+padding: 20px;
+margin: 20px;
+}
+
+.personajes-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.767);
+color: white;
+padding: 20px;
+border: 2px solid #f8a700;
+border-radius: 10px;
+width: 100%;
+max-width: 400px;
+box-sizing: border-box;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+text-align: center;
+text-decoration: none;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.personajes-container:hover {
+transform: scale(1.05);
+box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.personaje-name {
+font-size: 22px;
+font-weight: bold;
+margin-bottom: 10px;
+color: #f8a700;
+}
+
+.personaje-details {
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 12px;
+}
+
+.personaje-info {
+display: flex;
+justify-content: space-between;
+color: #ddd;
+font-size: 16px;
+}
+
+.label {
+font-weight: bold;
+color: #f8a700;
+font-size: 16px;
+}
+
+.value {
+color: #fff;
+font-style: italic;
+font-size: 16px;
+padding-left: 10px;
+}
+
+.personajes-container a {
+    text-decoration: none;
+}
+
+//****************************************ESTILOS DEL BOTÓN****************************************
+
+.boton-personajes{
+    display: flex;
+    justify-content: center;
+}
+
+.boton-personajes .ver-mas-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f8a700;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.boton-personajes .ver-mas-btn:hover {
+    background-color: #e69900;
+}

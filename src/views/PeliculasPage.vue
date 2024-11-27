@@ -4,11 +4,12 @@
                 <PeliculasComponent 
                     v-for="(Pelicula, index) in Peliculas" 
                     :key="Pelicula.uid"
-                    :episode_id="Pelicula.properties.episode_id"
-                    :director="Pelicula.properties.director"
-                    :title="Pelicula.properties.title"
-                    :producer="Pelicula.properties.producer"
-                    :release_data="Pelicula.properties.release_data"
+                    :title="Pelicula.title"
+                    :episode_id="Pelicula.episode_id"
+                    :opening_crawl="Pelicula.opening_crawl"
+                    :director="Pelicula.director"
+                    :producer="Pelicula.producer"
+                    :release_date="Pelicula.release_date"
         />        
         </div>
     </body>
@@ -16,20 +17,21 @@
 
 <script setup>
 import { onMounted, ref } from 'vue';
-import PeliculasComponent from '@/components/PEliculasComponent.vue'
+import PeliculasComponent from '@/components/PeliculasComponent.vue'
 
 const Peliculas=ref([]);
 
 onMounted(()=>{
-    console.log("hola");
-    fetch("https://swapi.tech/api/films")
+    console.log("hola1");
+    fetch("https://swapi.dev/api/films")
         .then((response)=>response.json())
         .then((data)=>{
-            Peliculas.value=data.result;
-            console.log("hola");
+            Peliculas.value=data.results;
+            console.log(data);
         })
         .catch((error)=>{
             console.error("Error",error)
+            console.log("holaerror");
         });
     });
 </script>

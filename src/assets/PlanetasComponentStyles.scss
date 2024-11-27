@@ -1,0 +1,92 @@
+.Planetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.planetas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(34, 34, 34, 0.9);
+    color: white;
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.planetas-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.planeta-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.planeta-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.planeta-info {
+    display: flex;
+    justify-content: space-between;
+    color: #bbb;  // Un color gris suave
+    font-size: 16px;
+}
+
+.planeta-info .label {
+    font-weight: bold;
+    color: #4CAF50;  // Verde brillante para las etiquetas
+    font-size: 16px;
+}
+
+.planeta-info .value {
+    color: #fff;  // Blanco para los valores
+    font-style: italic;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.planetas-container a {
+    text-decoration: none;
+}
+
+//****************************************ESTILOS DEL BOTÓN****************************************
+
+.boton-planetas {
+    display: flex;
+    justify-content: center;
+}
+
+.boton-planetas .ver-mas-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50; // Verde más suave para el botón
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.boton-planetas .ver-mas-btn:hover {
+    background-color: #388E3C;  // Un verde más oscuro al hacer hover
+}
