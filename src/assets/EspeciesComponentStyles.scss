@@ -1,0 +1,92 @@
+.Especies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.especies-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(28, 19, 58, 0.85);
+    color: white;
+    padding: 20px;
+    border: 2px solid #5e5ec2;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.especies-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.especies-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #6c5ec2;
+}
+
+.especies-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.especies-info {
+    display: flex;
+    justify-content: space-between;
+    color: #d9d9f7;
+    font-size: 16px;
+}
+
+.especies-info .label {
+    font-weight: bold;
+    color: #5e5ec2;
+    font-size: 16px;
+}
+
+.especies-info .value {
+    color: #ffffff;
+    font-style: italic;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.especies-container a {
+    text-decoration: none;
+}
+
+.boton-especies {
+    display: flex;
+    justify-content: center;
+}
+
+.boton-especies .ver-mas-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #6c5ec2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-especies .ver-mas-btn:hover {
+    background-color: #5448a1;
+}

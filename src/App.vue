@@ -15,6 +15,10 @@
       </SplideSlide>
     </Splide>
 
+    <!-- <audio autoplay loop>
+      <source src="../src/assets/audios/MarchaImperial.mp3" type="audio/mp3">
+    </audio>   -->
+
     <header class="header-container">
       <div class="video-background">
         <video autoplay loop muted playsinline>
@@ -31,8 +35,8 @@
         <RouterLink to="/people" class="header-link">Personajes</RouterLink>
         <RouterLink to="/planets" class="header-link">Planetas</RouterLink> 
         <RouterLink to="/Peliculas" class="header-link">Películas</RouterLink>
-          <RouterLink to="/vista5" class="header-link">Especies</RouterLink>
-        <RouterLink to="/vista6" class="header-link">Vehículos</RouterLink>
+          <RouterLink to="/Especies" class="header-link">Especies</RouterLink>
+        <RouterLink to="/Vehículos" class="header-link">Vehículos</RouterLink>
         <RouterLink to="/vista7" class="header-link">Naves Espaciales</RouterLink>
       </nav>
     </header>
@@ -48,8 +52,8 @@
           <a href="/terminos" class="footer-link">Términos y Condiciones</a>
         </div>
         <div class="footer-social">
-          <a href="https://facebook.com" class="footer-social-link" target="_blank">Facebook</a>
-          <a href="https://twitter.com" class="footer-social-link" target="_blank">Twitter</a>
+          <a href="https://www.facebook.com/starwars.es/?locale=es_ES" class="footer-social-link" target="_blank">Facebook</a>
+          <a href="https://x.com/starwars?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="footer-social-link" target="_blank">Twitter</a>
           <a href="https://instagram.com" class="footer-social-link" target="_blank">Instagram</a>
         </div>
       </div>

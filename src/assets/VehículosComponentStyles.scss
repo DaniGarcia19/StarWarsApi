@@ -1,0 +1,93 @@
+.Vehículos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.vehículos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(30, 30, 30, 0.9); /* Fondo gris oscuro */
+    color: white;
+    padding: 20px;
+    border: 2px solid #4a4a4a; /* Borde gris */
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra más suave */
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vehículos-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.7); /* Sombra más intensa al hacer hover */
+}
+
+.vehículos-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #b3b3b3; /* Gris más claro para el título */
+}
+
+.vehículos-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.vehículos-info {
+    display: flex;
+    justify-content: space-between;
+    color: #d6d6d6; /* Gris claro */
+    font-size: 16px;
+}
+
+.vehículos-info .label {
+    font-weight: bold;
+    color: #7a7a7a; /* Gris intermedio */
+    font-size: 16px;
+}
+
+.vehículos-info .value {
+    color: #e0e0e0; /* Gris casi blanco */
+    font-style: italic;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.vehículos-container a {
+    text-decoration: none;
+}
+
+/* Botón */
+.boton-vehículo {
+    display: flex;
+    justify-content: center;
+}
+
+.boton-vehículo .ver-mas-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5a5a5a; /* Gris oscuro */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-vehículo .ver-mas-btn:hover {
+    background-color: #767676; /* Gris más claro al hacer hover */
+}
