@@ -19,7 +19,7 @@
 
     <div class="boton-especies">
     <button v-if="nextPageUrl" @click="loadMore" class="ver-mas-btn">
-        Ver más Planetas
+        {{ $t('boton.text') }}
     </button>
     </div>
 </body>

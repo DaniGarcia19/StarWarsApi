@@ -21,7 +21,7 @@
         <!-- el botón llama a la funcion loadmore que se encarga de volver a llamar loadpersonaje scon una nueva url -->
         <div class="boton-vehículo">
             <button v-if="nextPageUrl" @click="loadMore" class="ver-mas-btn">
-            Ver más personajes
+                {{ $t('boton.text') }}
         </button>
         </div>
     </body>

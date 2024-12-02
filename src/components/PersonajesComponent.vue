@@ -6,31 +6,31 @@
 
         <div class="personaje-details">
         <div class="personaje-info">
-            <span class="label">Altura:</span>
+            <span class="label">{{ $t('attributes1.height') }}:</span>
             <span class="value">{{ height }} cm</span>
         </div>
         <div class="personaje-info">
-            <span class="label">Masa:</span>
+            <span class="label">{{ $t('attributes1.mass') }}:</span>
             <span class="value">{{ mass }} kg</span>
         </div>
         <div class="personaje-info">
-            <span class="label">Color de cabello:</span>
+            <span class="label">{{ $t('attributes1.hair_color') }}:</span>
             <span class="value">{{ hair_color }}</span>
         </div>
         <div class="personaje-info">
-            <span class="label">Color de piel:</span>
+            <span class="label">{{ $t('attributes1.skin_color') }}:</span>
             <span class="value">{{ skin_color }}</span>
         </div>
         <div class="personaje-info">
-            <span class="label">Color de ojos:</span>
+            <span class="label">{{ $t('attributes1.eye_color') }}:</span>
             <span class="value">{{ eye_color }}</span>
         </div>
         <div class="personaje-info">
-            <span class="label">Año de nacimiento:</span>
+            <span class="label">{{ $t('attributes1.birth_year') }}:</span>
             <span class="value">{{ birth_year }}</span>
         </div>
         <div class="personaje-info">
-            <span class="label">Género:</span>
+            <span class="label">{{ $t('attributes1.gender') }}:</span>
             <span class="value">{{ gender }}</span>
         </div>
         </div>

@@ -6,39 +6,39 @@
     
             <div class="vehículos-details">
             <div class="vehículos-info">
-                <span class="label">Modelo:</span>
+                <span class="label">{{ $t('attributes5.model') }}:</span>
                 <span class="value">{{ model }} cm</span>
             </div>
             <div class="vehículos-info">
-                <span class="label">Creador:</span>
+                <span class="label">{{ $t('attributes5.manufacturer') }}:</span>
                 <span class="value">{{ manufacturer }} kg</span>
             </div>
             <div class="vehículos-info">
-                <span class="label">Precio en créditos:</span>
+                <span class="label">{{ $t('attributes5.cost_in_credits') }}:</span>
                 <span class="value">{{ cost_in_credits }}</span>
             </div>
             <div class="vehículos-info">
-                <span class="label">Longitud:</span>
+                <span class="label">{{ $t('attributes5.length') }}:</span>
                 <span class="value">{{ length }}</span>
             </div>
             <div class="vehículos-info">
-                <span class="label">Crew:</span>
+                <span class="label">{{ $t('attributes5.crew') }}:</span>
                 <span class="value">{{ crew }}</span>
             </div>
             <div class="vehículos-info">
-                <span class="label">Pasajeros:</span>
+                <span class="label">{{ $t('attributes5.passengers') }}:</span>
                 <span class="value">{{ passengers }}</span>
             </div>
             <div class="vehículos-info">
-                <span class="label">Capacidad:</span>
+                <span class="label">{{ $t('attributes5.cargo_capacity') }}:</span>
                 <span class="value">{{ cargo_capacity }}</span>
             </div>
             <div class="vehículos-info">
-                <span class="label">Consumibles:</span>
+                <span class="label">{{ $t('attributes5.consumables') }}:</span>
                 <span class="value">{{ consumables }}</span>
             </div>
             <div class="vehículos-info">
-                <span class="label">Tipo de cehículo:</span>
+                <span class="label">{{ $t('attributes5.vehicle_class') }}:</span>
                 <span class="value">{{ vehicle_class }}</span>
             </div>
             </div>

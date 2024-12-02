@@ -2,7 +2,8 @@ import PeliculasPage from '@/views/PeliculasPage.vue'
 import PersonajesPage from '@/views/PersonajesPage.vue'
 import PlanetasPage from '@/views/PlanetasPage.vue'
 import EspeciesPage from '@/views/EspeciesPage.vue'
-import Vehículospage from '@/views/Vehículospage.vue'
+import Vehículospage from '@/views/VehículosPage.vue'
+import NavesPage from '@/views/NavesPage.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 
@@ -37,6 +38,11 @@ const router = createRouter({
       path: '/Vehículos',
       name: 'VehículosPage',
       component: Vehículospage
+    },
+    {
+      path: '/Naves',
+      name: 'NavesPage',
+      component: NavesPage
     }
   ]
 })

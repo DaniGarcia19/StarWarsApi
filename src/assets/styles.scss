@@ -97,6 +97,44 @@ object-fit: cover;
 opacity: 0.8;
 }
 
+.language-buttons {
+position: absolute;
+top: 10px;
+right: 10px;
+display: flex;
+gap: 10px;
+z-index: 10;
+}
+
+.language-buttons button {
+background: none;
+border: none;
+cursor: pointer;
+}
+
+.language-buttons button img {
+width: 20px;
+height: 20px;
+border-radius: 5px;
+transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.language-buttons button:hover img {
+opacity: 0.7;
+}
+
+.language-buttons button.active img {
+border: 2px solid #e8ec00;
+transform: scale(1.1);
+}
+
+.language-buttons button.active {
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 5px;
+}
+
+
+
 //-------------------------------APARTADO FOOTER-------------------------------
 .app-container {
 display: flex;
@@ -161,6 +199,26 @@ margin-bottom: 10px;
 .header-links {
 margin-top: 20px;
 }
+//-------------------------------APARTADO BUSCADOR PAGINAS-------------------------------
+.buscador {
+margin: 10px 0;
+width: 50vw;
+padding-left: 25vw;
+padding-top: 25px;
+}
+
+.buscador-input {
+width: 100%;
+padding: 10px;
+font-size: 16px;
+border: 2px solid #000000;
+border-radius: 5px;
+margin-bottom: 20px;
+}
+
+.ver-mas-btn {
+margin-top: 20px;
+}
 
 
 
@@ -169,3 +227,4 @@ margin-top: 20px;
 @import url(PlanetasComponentStyles.scss);
 @import url(EspeciesComponentStyles.scss);
 @import url(VehículosComponentStyles.scss);
+@import url(NavesComponentStyles.scss);

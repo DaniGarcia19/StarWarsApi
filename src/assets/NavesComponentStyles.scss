@@ -1,0 +1,93 @@
+.Naves {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.naves-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: rgba(245, 245, 245, 0.85);
+    background-color: rgba(0, 0, 0, 0.801);
+    padding: 20px;
+    border: 2px solid #00bcd4;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.naves-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.naves-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #00acc1;
+}
+
+.naves-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.naves-info {
+    display: flex;
+    justify-content: space-between;
+    // color: #555555;
+    color: rgba(255, 255, 255, 0.733);
+    font-size: 16px;
+}
+
+.naves-info .label {
+    font-weight: bold;
+    color: #00acc1;
+    font-size: 16px;
+}
+
+.naves-info .value {
+    // color: #333333;
+    font-style: italic;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.naves-container a {
+    text-decoration: none;
+}
+
+.boton-nave {
+    display: flex;
+    justify-content: center;
+}
+
+.boton-nave .ver-mas-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-nave .ver-mas-btn:hover {
+    background-color: #008ba3;
+}

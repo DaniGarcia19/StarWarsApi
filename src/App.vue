@@ -30,26 +30,42 @@
         <img src="/src/assets/imgs/imagenStarWars.png" alt="Descripción de la imagen" />
       </div>
 
-      <nav class="header-links">
-        <RouterLink to="/" class="header-link">Inicio</RouterLink>
-        <RouterLink to="/people" class="header-link">Personajes</RouterLink>
-        <RouterLink to="/planets" class="header-link">Planetas</RouterLink> 
-        <RouterLink to="/Peliculas" class="header-link">Películas</RouterLink>
-          <RouterLink to="/Especies" class="header-link">Especies</RouterLink>
-        <RouterLink to="/Vehículos" class="header-link">Vehículos</RouterLink>
-        <RouterLink to="/vista7" class="header-link">Naves Espaciales</RouterLink>
+  <nav class="header-links">
+        <RouterLink to="/" class="header-link">{{ $t('navigation.home') }}</RouterLink>
+        <RouterLink to="/people" class="header-link">{{ $t('navigation.characters') }}</RouterLink>
+        <RouterLink to="/planets" class="header-link">{{ $t('navigation.planets') }}</RouterLink>
+        <RouterLink to="/Peliculas" class="header-link">{{ $t('navigation.movies') }}</RouterLink>
+        <RouterLink to="/Especies" class="header-link">{{ $t('navigation.species') }}</RouterLink>
+        <RouterLink to="/Vehículos" class="header-link">{{ $t('navigation.vehicles') }}</RouterLink>
+        <RouterLink to="/Naves" class="header-link">{{ $t('navigation.spaceships') }}</RouterLink>
       </nav>
+      <div class="language-buttons">
+        <button 
+          class="btn-es" 
+          @click="$i18n.locale = 'es'" 
+          :class="{ active: $i18n.locale === 'es' }"
+        >
+          <img src="../src/assets/imgs/es.png" alt="Español" />
+        </button>
+        <button 
+          class="btn-en" 
+          @click="$i18n.locale = 'en'" 
+          :class="{ active: $i18n.locale === 'en' }"
+        >
+          <img src="../src/assets/imgs/en.png" alt="English" />
+        </button>
+      </div>
     </header>
 
     <RouterView />
 
     <footer class="footer-container">
       <div class="footer-content">
-        <p>&copy; 2024 Star Wars Universe. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Star Wars Universe. {{ $t('footer.rights') }}</p>
         <div class="footer-links">
-          <a href="/contacto" class="footer-link">Contacto</a>
-          <a href="/politica-privacidad" class="footer-link">Política de Privacidad</a>
-          <a href="/terminos" class="footer-link">Términos y Condiciones</a>
+          <a href="/contacto" class="footer-link">{{ $t('footer.contact') }}</a>
+          <a href="/politica-privacidad" class="footer-link">{{ $t('footer.privacyPolicy') }}</a>
+          <a href="/terminos" class="footer-link">{{ $t('footer.terms') }}</a>
         </div>
         <div class="footer-social">
           <a href="https://www.facebook.com/starwars.es/?locale=es_ES" class="footer-social-link" target="_blank">Facebook</a>

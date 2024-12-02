@@ -6,35 +6,35 @@
     
             <div class="planeta-details">
             <div class="planeta-info">
-                <span class="label">Perido de Rotación:</span>
+                <span class="label">{{ $t('attributes2.rotation_period') }}:</span>
                 <span class="value">{{ rotation_period }} cm</span>
             </div>
             <div class="planeta-info">
-                <span class="label">Perido de Órbita:</span>
+                <span class="label">{{ $t('attributes2.orbital_period') }}:</span>
                 <span class="value">{{ orbital_period }} kg</span>
             </div>
             <div class="planeta-info">
-                <span class="label">Diámetro:</span>
+                <span class="label">{{ $t('attributes2.diameter') }}:</span>
                 <span class="value">{{ diameter }}</span>
             </div>
             <div class="planeta-info">
-                <span class="label">Clima:</span>
+                <span class="label">{{ $t('attributes2.climate') }}:</span>
                 <span class="value">{{ climate }}</span>
             </div>
             <div class="planeta-info">
-                <span class="label">Gravedad:</span>
+                <span class="label">{{ $t('attributes2.gravity') }}:</span>
                 <span class="value">{{ gravity }}</span>
             </div>
             <div class="planeta-info">
-                <span class="label">Terreno:</span>
+                <span class="label">{{ $t('attributes2.terrain') }}:</span>
                 <span class="value">{{ terrain }}</span>
             </div>
             <div class="planeta-info">
-                <span class="label">Superficies de agua:</span>
+                <span class="label">{{ $t('attributes2.surface_water') }}:</span>
                 <span class="value">{{ surface_water }}</span>
             </div>
             <div class="planeta-info">
-                <span class="label">Población:</span>
+                <span class="label">{{ $t('attributes2.population') }}:</span>
                 <span class="value">{{ population }}</span>
             </div>
             </div>

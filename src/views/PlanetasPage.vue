@@ -19,7 +19,7 @@
         <!-- el botón llama a la funcion loadmore que se encarga de volver a llamar loadpersonaje scon una nueva url -->
         <div class="boton-planetas">
             <button v-if="nextPageUrl" @click="loadMore" class="ver-mas-btn">
-            Ver más Planetas
+                {{ $t('boton.text') }}
         </button>
         </div>
     </body>
