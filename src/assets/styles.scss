@@ -1,13 +1,15 @@
-*{
+* {
 font-family: 'Star Jedi', sans-serif;
 font-size: 36px;
 }
+
 html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
 }
+
 //-------------------------------APARTADO SPLIDE-------------------------------
 .splide {
 z-index: -2;
@@ -21,28 +23,29 @@ padding: 0;
 
 .splide__track,
 .splide__list {
-width: 100%;
-height: 100%;
-margin: 0;
-padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .splide__slide img {
-width: 100%;
-height: 100%;
-object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 }
 
 //-------------------------------APARTADO HEADER-------------------------------
 .header-container {
-background-color: rgba(0, 0, 0, 0.308); 
+background-color: rgba(0, 0, 0, 0.308);
 color: white;
 text-align: center;
 position: relative;
 padding: 20px 0;
 border-bottom: 2px solid white;
 }
+
 .imagen {
 margin-bottom: 10px;
 }
@@ -72,11 +75,11 @@ transition: color 0.3s ease, transform 0.2s ease;
 
 .header-link:hover {
 color: #e8ec00;
-transform: translateY(-2px);
+transform: translateY(-4px);
 }
 
 @font-face {
-font-family: 'Star Jedi'; 
+font-family: 'Star Jedi';
 src: url('SF Distant Galaxy.ttf') format('truetype');
 }
 
@@ -130,10 +133,59 @@ transform: scale(1.1);
 
 .language-buttons button.active {
 background-color: rgba(255, 255, 255, 0.1);
-border-radius: 5px;
+border-radius: 10px;
 }
 
+//-------------------------------RESPONSIVE HEADER-------------------------------
+@media (max-width: 1024px) { // pantallas desde esta medida de 1024
+.header-container {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.header-links {
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header-link {
+    font-size: 25px;
+}
+
+.imagen img {
+    max-height: 100px; 
+}
+}
+
+@media (max-width: 600px) { // pantallas desde esta medida de 1024
+.header-container {
+    padding: 10px;
+    text-align: left;
+}
+
+.imagen img {
+    max-height: 80px; 
+}
+
+.header-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-link {
+    font-size: 20px;
+}
+
+.language-buttons {
+    top: auto; 
+    top: 20px;
+    right: 10px;
+}
+}
 
 //-------------------------------APARTADO FOOTER-------------------------------
 .app-container {
@@ -176,7 +228,6 @@ transition: color 0.3s ease, transform 0.2s ease;
 
 .footer-link:hover {
 color: #f0f0f0;
-transform: translateY(-2px);
 }
 
 .footer-social-link {
@@ -199,6 +250,7 @@ margin-bottom: 10px;
 .header-links {
 margin-top: 20px;
 }
+
 //-------------------------------APARTADO BUSCADOR PAGINAS-------------------------------
 .buscador {
 margin: 10px 0;
@@ -219,8 +271,6 @@ margin-bottom: 20px;
 .ver-mas-btn {
 margin-top: 20px;
 }
-
-
 
 @import url(PeliculasComponentStyles.scss);
 @import url(PersonajesComponentStyles.scss);

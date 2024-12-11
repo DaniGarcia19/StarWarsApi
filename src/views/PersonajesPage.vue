@@ -25,7 +25,8 @@
     </div>
     
     <div class="boton-personajes">
-        <button v-if="nextPageUrl" @click="loadMore" class="ver-mas-btn">
+        <!-- aqui en las condciones del v-if, el boton sale si hay siguiente pagina y si en la barra de busqueda hay algo escrito -->
+        <button v-if="nextPageUrl && !searchQuery" @click="loadMore" class="ver-mas-btn">
         {{ $t('boton.text') }}
         </button>
     </div>

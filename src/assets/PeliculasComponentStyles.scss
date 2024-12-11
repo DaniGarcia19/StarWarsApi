@@ -50,6 +50,20 @@ font-size: 14px;
 color: #e8ec00;
 }
 
+@media (max-width: 1024px) { // pantallas desde esta medida de 1024
+    .peliculas-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+}
+@media (max-width: 600px) { // pantallas desde esta medida de 1024
+    .peliculas-details {
+        display: flex;
+        justify-content: center;
+        }
+}
+
 //-----------------------------QUITAR LOS SUBRAYADOS DE LA INFO-----------------------------
 .router-link-active{
     color: transparent;
