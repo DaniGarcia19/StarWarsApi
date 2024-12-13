@@ -15,6 +15,7 @@ text-align: center;
 text-decoration: none;
 transition: transform 0.3s ease, box-shadow 0.3s ease;
 cursor: pointer;
+animation: fadeInUp 2s ease;
 }
 
 .peliculas:hover {

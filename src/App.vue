@@ -1,5 +1,10 @@
 <template>
   <div class="app-container">
+    <!-- Audio de fondo -->
+    <audio id="background-audio" autoplay loop>
+      <source src="/src/assets/audios/MarchaImperial.mp3" type="audio/mp3" />
+    </audio>
+
     <Splide :options="options" aria-label="Background Carousel">
       <SplideSlide>
         <img src="https://images4.alphacoders.com/131/1313954.jpeg" alt="Background 1" />
@@ -15,10 +20,6 @@
       </SplideSlide>
     </Splide>
 
-    <!-- <audio autoplay loop>
-      <source src="../src/assets/audios/MarchaImperial.mp3" type="audio/mp3">
-    </audio>   -->
-
     <header class="header-container">
       <div class="video-background">
         <video autoplay loop muted playsinline>
@@ -30,7 +31,7 @@
         <img src="/src/assets/imgs/imagenStarWars.png" alt="Descripción de la imagen" />
       </div>
 
-  <nav class="header-links">
+      <nav class="header-links">
         <RouterLink to="/" class="header-link">{{ $t('navigation.home') }}</RouterLink>
         <RouterLink to="/people" class="header-link">{{ $t('navigation.characters') }}</RouterLink>
         <RouterLink to="/planets" class="header-link">{{ $t('navigation.planets') }}</RouterLink>
@@ -39,6 +40,7 @@
         <RouterLink to="/Vehículos" class="header-link">{{ $t('navigation.vehicles') }}</RouterLink>
         <RouterLink to="/Naves" class="header-link">{{ $t('navigation.spaceships') }}</RouterLink>
       </nav>
+
       <div class="language-buttons">
         <button 
           class="btn-es" 

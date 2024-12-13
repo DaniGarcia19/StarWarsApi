@@ -48,6 +48,7 @@ border-bottom: 2px solid white;
 
 .imagen {
 margin-bottom: 10px;
+animation: zoomInDown 2s ease;
 }
 
 .imagen img {
@@ -62,6 +63,7 @@ display: flex;
 justify-content: center;
 gap: 30px;
 margin-top: 10px;
+animation: zoomInDown 2s ease;
 }
 
 .header-link {
@@ -107,6 +109,7 @@ right: 10px;
 display: flex;
 gap: 10px;
 z-index: 10;
+animation: fadeInUp 4s ease;
 }
 
 .language-buttons button {
@@ -211,6 +214,7 @@ border-top: 2px solid white;
 .footer-content {
 max-width: 1200px;
 margin: 0 auto;
+animation: zoomInDown 2s ease;
 }
 
 .footer-links, .footer-social {
