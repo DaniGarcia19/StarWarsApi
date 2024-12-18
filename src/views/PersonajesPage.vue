@@ -76,8 +76,8 @@ const loadAllPersonajes = async (initialUrl) => {
 
 // cargamos todos los datos
 onMounted(() => {
-    loadPersonajes("https://swapi.dev/api/people/");
-    loadAllPersonajes("https://swapi.dev/api/people/");
+    loadPersonajes("https://swapi.py4e.com/api/people/");
+    loadAllPersonajes("https://swapi.py4e.com/api/people/");
 });
 // aqui para cargar mas paginas haciendo que guardo lo antiguo con lo nuevo --- seguir el hilo de la ejecució para verlo
 const loadMore = () => {

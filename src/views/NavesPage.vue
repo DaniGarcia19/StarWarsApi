@@ -50,7 +50,7 @@
     };
     
     onMounted(() => {
-        loadNaves("https://swapi.dev/api/starships/"); //aqui cargas los primeros
+        loadNaves("https://swapi.py4e.com/api/starships/"); //aqui cargas los primeros
     });
     
     const loadMore = () => { //funcion que llama el botón, la cual llama otra vez a lo de ante spero con la nueva url.

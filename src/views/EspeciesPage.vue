@@ -69,7 +69,7 @@ try {
 };
 
 onMounted(() => {
-loadEspecies("https://swapi.dev/api/species/"); 
+loadEspecies("https://swapi.py4e.com/api/species"); 
 });
 
 const loadMore = () => {

@@ -48,7 +48,7 @@
     };
     
     onMounted(() => {
-        loadVehículos("https://swapi.dev/api/vehicles/"); //aqui cargas los primeros
+        loadVehículos("https://swapi.py4e.com/api/vehicles/"); //aqui cargas los primeros
     });
     
     const loadMore = () => { //funcion que llama el botón, la cual llama otra vez a lo de ante spero con la nueva url.

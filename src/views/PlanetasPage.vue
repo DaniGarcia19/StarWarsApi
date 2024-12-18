@@ -46,7 +46,7 @@
     };
     
     onMounted(() => {
-    loadPlanetas("https://swapi.dev/api/planets/"); //aqui cargas los primeros
+    loadPlanetas("https://swapi.py4e.com/api/planets/"); //aqui cargas los primeros
     });
     
     const loadMore = () => { //funcion que llama el botón, la cual llama otra vez a lo de ante spero con la nueva url.

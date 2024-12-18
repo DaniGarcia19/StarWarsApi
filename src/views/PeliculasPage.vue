@@ -23,7 +23,7 @@ const Peliculas=ref([]);
 
 onMounted(()=>{
     console.log("hola1");
-    fetch("https://swapi.dev/api/films")
+    fetch("https://swapi.py4e.com/api/films")
         .then((response)=>response.json())
         .then((data)=>{
             Peliculas.value=data.results;
